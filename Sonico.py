@@ -3,7 +3,7 @@ client = discord.Client()
 token = '' #Insert Discord Bot Token
 adminID = "" #Insert your ID to access the Admin commands
 version = "1.0"
-build = "2"
+build = "3"
 
 now = datetime.datetime.now()
 if os.path.isdir("logs") == False: #Setting up logging:
