@@ -1,6 +1,6 @@
 import discord, asyncio, time, datetime, os, logging
 client = discord.Client()
-token = 'MjMzNjEwOTc2Nzc4MjU2Mzg0.C5ofDA.B9pevZhW1oJkAcUVAbIgG9HKHcw' #Insert Discord Bot Token
+token = '' #Insert Discord Bot Token
 adminID = "" #Insert your ID to access the Admin commands
 version = "1.0"
 build = "2"
@@ -151,7 +151,7 @@ async def on_message(message):
 
 @client.event
 async def on_error(event, *args, **kwargs):
-    await client.send_message(discord.Object(id='280711593669558273'), "```Error Raised: " + str(sys.exc_info()) + "```" + "Event rasied on: " + event)
+    #await client.send_message(discord.Object(id='280711593669558273'), "```Error Raised: " + str(sys.exc_info()) + "```" + "Event rasied on: " + event)
     print("Error Raised: " + str(sys.exc_info()) + "```" + "Event rasied on: " + event)
 
 try:
